@@ -8,7 +8,7 @@ class Student(Base): # this creates a python class called student. we create thi
     id = Column(Integer, primary_key=True, index=True) #id is a column in the table  and is an interger
     name = Column(String, nullable=False) # nullable false means this field is required
     course = Column(String, nullable=False)
-    grade = Column(float, default=0.0) # is a column and the data type is float, default to 0.0
+    grade = Column(Float, default=0.0) # is a column and the data type is float, default to 0.0
     email = Column(String, unique=True)
 
     
